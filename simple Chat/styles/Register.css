@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0c1220 0%, #192239 100%);
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+form {
+  width: 100%;
+  max-width: 520px;
+  background: rgba(15, 23, 42, 0.96);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 14px 12px;
+  vertical-align: middle;
+  color: #c9d1d9;
+}
+
+tr + tr td {
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+td:first-child {
+  color: #8b949e;
+  font-weight: 600;
+  width: 35%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+  background: #010409;
+  color: #c9d1d9;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #58a6ff;
+  box-shadow: 0 0 0 4px rgba(56, 139, 253, 0.14);
+}
+
+input[type="reset"],
+input[type="submit"] {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="reset"] {
+  background: rgba(148, 163, 184, 0.16);
+  color: #e5e7eb;
+}
+
+input[type="submit"] {
+  background: linear-gradient(90deg, #79c0ff 0%, #1f6feb 100%);
+  color: #010409;
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(56, 139, 253, 0.18);
+}
+
+@media (max-width: 560px) {
+  form {
+    padding: 24px;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  td:first-child {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+
+  tr + tr td {
+    border-top: none;
+  }
+}
+

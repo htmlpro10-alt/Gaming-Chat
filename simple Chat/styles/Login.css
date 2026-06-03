@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0d1117 0%, #171e2b 100%);
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+form {
+  width: 100%;
+  max-width: 420px;
+}
+
+.Login_text {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #58a6ff;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.Login_Table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.Login_Table td {
+  padding: 12px 10px;
+  vertical-align: middle;
+}
+
+.Login_Table tr + tr {
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.e-text,
+.p-text {
+  color: #8b949e;
+  font-size: 0.97rem;
+  font-weight: 600;
+}
+
+.e-input,
+.p-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+  background: #010409;
+  color: #c9d1d9;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.e-input:focus,
+.p-input:focus {
+  border-color: #58a6ff;
+  box-shadow: 0 0 0 4px rgba(56, 139, 253, 0.12);
+}
+
+.s-btn {
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #79c0ff 0%, #1f6feb 100%);
+  color: #010409;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.s-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(56, 139, 253, 0.18);
+}
+
+h4 {
+  margin-top: 20px;
+  text-align: center;
+  color: #c9d1d9;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.create-link {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.create-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 520px) {
+  body {
+    padding: 16px;
+  }
+
+  .Login_text {
+    font-size: 1.9rem;
+  }
+
+  .Login_Table {
+    padding: 22px;
+  }
+}
